@@ -1,0 +1,18 @@
+.mainBlock {
+    /* margin: 0 auto; */
+    /* display: flex; */
+    gap: 60px;
+    text-align: center;
+    margin-top: 60px;
+}
+.mainBlock img {
+    width: 200px;
+    height: 200px;
+}
+.mainBlock div {
+    font-size: 24px;
+}
+
+.load {
+    font-size: 46px;
+}
