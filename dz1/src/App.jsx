@@ -2,23 +2,23 @@ import { useState } from 'react'
 import './App.css'
 import { Routes, Route, NavLink } from 'react-router-dom'
 import MainPage from './pages/MainPage/MainPage'
-import PokemonPage from './pages/PokemonPage/PokemonPage'
-import PokemonInfoPage from './pages/PokemonInfoPage/PokemonInfoPage'
+import PostPage from './pages/PostPage/PostPage'
+import PostInfoPage from './pages/PostInfoPage/PostInfoPage'
+import Layuot from './pages/Layout/Layout'
+// import TranslatePage from './pages/TranslatePage/TranslatePage'
 
 function App() {
 
   return (
     <>
-    <nav>
-      <ul>
-        <li><NavLink to={"/"}>MainPage</NavLink></li>
-        <li><NavLink to={"/pokemon"}>pokemons</NavLink></li>
-      </ul>
-    </nav>
     <Routes>
-      <Route path='/' element={<MainPage />}/>
-      <Route path='/pokemon' element={<PokemonPage />}/>
-      <Route path='/pokemon/:id' element={<PokemonInfoPage />}/>
+      <Route path='/' element={<Layuot />}>
+        <Route index element={<MainPage />}/>
+        <Route path='/posts' element={<PostPage />}/>
+        <Route path='/posts/:id' element={<PostInfoPage />}/>
+        <Route path="*" element={<div>404</div>}/>
+      </Route>
+      {/* <Route path='/trans' element={<TranslatePage />}/> */}
     </Routes>
     </>
   )

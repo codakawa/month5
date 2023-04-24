@@ -4,22 +4,3 @@
     box-sizing: border-box;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    width: 100%;
-    color: blueviolet;
-    text-decoration: none;
-    font-size: 24px;
-}
-ul a {
-    text-decoration: none;
-    color: blueviolet;
-}
-
-.active {
-    color: forestgreen;
-    text-decoration: underline;
-}

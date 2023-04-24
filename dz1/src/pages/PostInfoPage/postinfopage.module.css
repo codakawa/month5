@@ -5,14 +5,21 @@
     text-align: center;
     margin-top: 60px;
 }
-.mainBlock img {
-    width: 200px;
-    height: 200px;
-}
 .mainBlock div {
     font-size: 24px;
 }
-
+.mainBlock span {
+    font-size: 28px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
 .load {
     font-size: 46px;
+}
+
+button {
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 150px;
+    height: 50px;
 }
