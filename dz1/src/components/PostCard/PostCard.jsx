@@ -8,7 +8,8 @@ const PostCard = ({ name, id }) => {
     <div className={classes.postName}>
       <span>{id}. </span>
       <Link to={`/posts/${id}`} className={classes.link}>{name}</Link>
-      <button onClick={() => APIDelete(`posts/${id}`).then(status => alert(status))}>DELETE</button>
+      <Link to={`/delete/${id}`}><button>DELETE</button></Link>
+      
     </div>
   )
 }

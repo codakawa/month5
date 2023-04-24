@@ -40,10 +40,10 @@ const PostInfoPage = () => {
 
   return postInfo != null ? 
   <>
-    <button onClick={back}>BACK</button>
     <div className={classes.mainBlock}>
         <span>{postInfo.id}</span>
         <div>{postInfo.body}</div>
+        <button onClick={back}>BACK</button>
     </div>
   </>
     :

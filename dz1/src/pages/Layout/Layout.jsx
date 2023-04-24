@@ -9,7 +9,7 @@ const Layuot = () => {
         <nav>
             <ul>
                 <li><NavLink to={"/"} className={({isActive}) => isActive ? classes.active : ""}>MainPage</NavLink></li>
-                <li><NavLink to={"/posts"} className={({isActive}) => isActive ? classes.active : ""}>pokemons</NavLink></li>
+                <li><NavLink to={"/posts"} className={({isActive}) => isActive ? classes.active : ""}>Posts</NavLink></li>
             </ul>
         </nav>
 
